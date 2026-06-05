@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="Index.css">
+</head>
+<body>
+    <div class="calculator-container">
+        <div class="calculator">
+            <div class="display">
+                <input type="text" id="display" class="display-input" placeholder="0">
+            </div>
+            <div class="buttons-grid">
+                <button class="btn btn-clear" onclick="clearDisplay()">C</button>
+                <button class="btn btn-delete" onclick="deleteLastChar()">DEL</button>
+                <button class="btn btn-operator" onclick="appendtodisplay('/')">/</button>
+                <button class="btn btn-operator" onclick="appendtodisplay('*')">×</button>
+                
+                <button class="btn btn-number" onclick="appendtodisplay('7')">7</button>
+                <button class="btn btn-number" onclick="appendtodisplay('8')">8</button>
+                <button class="btn btn-number" onclick="appendtodisplay('9')">9</button>
+                <button class="btn btn-operator" onclick="appendtodisplay('-')">-</button>
+                
+                <button class="btn btn-number" onclick="appendtodisplay('4')">4</button>
+                <button class="btn btn-number" onclick="appendtodisplay('5')">5</button>
+                <button class="btn btn-number" onclick="appendtodisplay('6')">6</button>
+                <button class="btn btn-operator" onclick="appendtodisplay('+')">+</button>
+                
+                <button class="btn btn-number" onclick="appendtodisplay('1')">1</button>
+                <button class="btn btn-number" onclick="appendtodisplay('2')">2</button>
+                <button class="btn btn-number" onclick="appendtodisplay('3')">3</button>
+                <button class="btn btn-operator" onclick="appendtodisplay('.')">.</button>
+                
+                <button class="btn btn-number btn-zero" onclick="appendtodisplay('0')">0</button>
+                <button class="btn btn-equals" onclick="calculate()">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="Index.js"></script>
+</body>
+</html>
